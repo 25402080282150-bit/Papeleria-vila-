@@ -1,1 +1,27 @@
+import java.util.Scanner;
 
+public class modificación {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        int numero;
+        int limite;
+
+        System.out.print("¿Qué número quieres multiplicar? ");
+        numero = teclado.nextInt();
+
+        System.out.print("¿Hasta qué número quieres multiplicar? ");
+        limite = teclado.nextInt();
+
+        System.out.println("Tabla del " + numero);
+
+        for (int i = 1; i <= limite; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+
+        //mensaje final
+        System.out.print("realizado por:martinez ramirez");
+        
+        teclado.close();
+    }
+}
